@@ -4,7 +4,7 @@ var Author = require('../models/author');
 exports.author_list = function (req, res, next) {
     Author.find()
         .sort([['family_name', 'ascending']])
-        .exec(function (err, result) {
+        .exec(function (err, list_authors) {
             if (err) {
                 return next(err);
             }
