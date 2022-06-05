@@ -30,4 +30,11 @@ BookSchema.virtual('url').get(function () {
     return '/catalog/book/' + this._id;
 })
 
+// Virtual for book's formatted due back
+BookSchema
+    .virtual('due_back_formatted')
+    .get(function () {
+        DateTime.fromJSDate(this.due_back).toLocaleString(DateTime.DATE_MED);
+    });
+
 module.exports = mongoose.model('Book', BookSchema);

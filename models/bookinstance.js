@@ -30,9 +30,9 @@ BookInstanceSchema.virtual('url').get(function () {
 
 // Virtual for bookinstance's formatted due back
 BookInstanceSchema
-    .virtual('due_date_formatted')
+    .virtual('due_back_formatted')
     .get(function () {
-        DateTime.fromJSDate(this.due_back).toLocaleString(DateTime.DATE_MED);
+        return DateTime.fromJSDate(this.due_back).toLocaleString(DateTime.DATE_MED);
     });
 
 module.exports = mongoose.model('BookInstance', BookInstanceSchema);
