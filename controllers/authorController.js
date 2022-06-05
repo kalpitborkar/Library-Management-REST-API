@@ -20,9 +20,9 @@ exports.author_detail = function (req, res, next) {
         author: function (callback) {
             Author.findById(req.params.id).exec(callback);
         },
-        author_books: function (callback) {
+        authors_books: function (callback) {
             Book.find({ 'author': req.params.id }, 'title summary').exec(callback);
-        }
+        },
     }, function (err, results) {
         if (err) {
             return next(err);
