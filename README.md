@@ -19,15 +19,15 @@ REST API for library management system built with Express, MongoDB and Pug.
 ### Book routes
 | Methods | Endpoints                          | Access  | Description                              |
 | ------- | ---------------------------------- | ------- | ---------------------------------------- |
-| GET     | /                                  | Public  | View all tasks                           |
-| GET     | /book/:id/create                   | Public  | Create a task                            |
-| POST    | /book/:id/create                   | Public  | View a task                              |
-| GET     | /book/:id/delete                   | Public  | Update a task                            |
-| POST    | /book/:id/delete                   | Public  | Delete a task                            |
-| GET     | /book/:id/update                   | Public  | View all tasks                           |
-| POST    | /book/:id/update                   | Public  | Create a task                            |
-| GET     | /book/:id                          | Public  | View a task                              |
-| GET     | /books                             | Public  | Update a task                            |
+| GET     | /                                  | Public  | View home page                           |
+| GET     | /book/:id/create                   | Public  | Get form to add a book                   |
+| POST    | /book/:id/create                   | Public  | Create a book                            |
+| GET     | /book/:id/delete                   | Public  | Get form to delete a book                |
+| POST    | /book/:id/delete                   | Public  | Delete a book                            |
+| GET     | /book/:id/update                   | Public  | Get form to update a book                |
+| POST    | /book/:id/update                   | Public  | Update a book                            |
+| GET     | /book/:id                          | Public  | View a book                              |
+| GET     | /books                             | Public  | View list of all books                   |
 
 ### Author routes
 | Methods | Endpoints                          | Access  | Description                              |
