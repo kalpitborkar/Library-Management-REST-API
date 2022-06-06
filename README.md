@@ -1,5 +1,5 @@
 # Library Management System
-REST API for library management system built with Express, MongoDB and Pug.
+REST API for library management system built with Express and MongoDB.
 
 ## Organization
 
@@ -20,11 +20,11 @@ REST API for library management system built with Express, MongoDB and Pug.
 | Methods | Endpoints                          | Access  | Description                              |
 | ------- | ---------------------------------- | ------- | ---------------------------------------- |
 | GET     | /                                  | Public  | View home page                           |
-| GET     | /book/:id/create                   | Public  | Get form to add a book                   |
-| POST    | /book/:id/create                   | Public  | Create a book                            |
-| GET     | /book/:id/delete                   | Public  | Get form to delete a book                |
+| GET     | /book/:id/create                   | Public  | Get HTML form to add a book              |
+| POST    | /book/:id/create                   | Public  | Add a book                               |
+| GET     | /book/:id/delete                   | Public  | Get HTML form to delete a book           |
 | POST    | /book/:id/delete                   | Public  | Delete a book                            |
-| GET     | /book/:id/update                   | Public  | Get form to update a book                |
+| GET     | /book/:id/update                   | Public  | Get HTML form to update a book           |
 | POST    | /book/:id/update                   | Public  | Update a book                            |
 | GET     | /book/:id                          | Public  | View a book                              |
 | GET     | /books                             | Public  | View list of all books                   |
@@ -32,38 +32,38 @@ REST API for library management system built with Express, MongoDB and Pug.
 ### Author routes
 | Methods | Endpoints                          | Access  | Description                              |
 | ------- | ---------------------------------- | ------- | ---------------------------------------- |
-| GET     | /author/:id/create                 | Public  | View all tasks                           |
-| POST    | /author/:id/create                 | Public  | View a task                              |
-| GET     | /author/:id/delete                 | Public  | Update a task                            |
-| POST    | /author/:id/delete                 | Public  | Delete a task                            |
-| GET     | /author/:id/update                 | Public  | View all tasks                           |
-| POST    | /author/:id/update                 | Public  | Create a task                            |
-| GET     | /author/:id                        | Public  | View a task                              |
-| GET     | /authors                           | Public  | Update a task                            |
+| GET     | /author/:id/create                 | Public  | Get HTML form to add an author           |
+| POST    | /author/:id/create                 | Public  | Add an author                            |
+| GET     | /author/:id/delete                 | Public  | Get HTML form to delete an author        |
+| POST    | /author/:id/delete                 | Public  | Delete an author                         |
+| GET     | /author/:id/update                 | Public  | Get HTML form to update an author        |
+| POST    | /author/:id/update                 | Public  | Update details of an author              |
+| GET     | /author/:id                        | Public  | View details of an author                |
+| GET     | /authors                           | Public  | View list of all authors                 |
 
 ### Genre routes
 | Methods | Endpoints                          | Access  | Description                              |
 | ------- | ---------------------------------- | ------- | ---------------------------------------- |
-| GET     | /genre/:id/create                  | Public  | View all tasks                           |
-| POST    | /genre/:id/create                  | Public  | View a task                              |
-| GET     | /genre/:id/delete                  | Public  | Update a task                            |
-| POST    | /genre/:id/delete                  | Public  | Delete a task                            |
-| GET     | /genre/:id/update                  | Public  | View all tasks                           |
-| POST    | /genre/:id/update                  | Public  | Create a task                            |
-| GET     | /genre/:id                         | Public  | View a task                              |
-| GET     | /genres                            | Public  | Update a task                            |
+| GET     | /genre/:id/create                  | Public  | Get HTML form to add a genre             |
+| POST    | /genre/:id/create                  | Public  | Add a genre                              |
+| GET     | /genre/:id/delete                  | Public  | Get HTML form to delete a genre          |
+| POST    | /genre/:id/delete                  | Public  | Delete a genre                           |
+| GET     | /genre/:id/update                  | Public  | Get HTML form to update a genre          |
+| POST    | /genre/:id/update                  | Public  | Update a genre                           |
+| GET     | /genre/:id                         | Public  | View all books of the genre              |
+| GET     | /genres                            | Public  | View list of all genres                  |
 
 ### Book Instance routes
 | Methods | Endpoints                          | Access  | Description                              |
 | ------- | ---------------------------------- | ------- | ---------------------------------------- |
-| GET     | /bookinstance/:id/create           | Public  | View all tasks                           |
-| POST    | /bookinstance/:id/create           | Public  | View a task                              |
-| GET     | /bookinstance/:id/delete           | Public  | Update a task                            |
-| POST    | /bookinstance/:id/delete           | Public  | Delete a task                            |
-| GET     | /bookinstance/:id/update           | Public  | View all tasks                           |
-| POST    | /bookinstance/:id/update           | Public  | Create a task                            |
-| GET     | /bookinstance/:id                  | Public  | View a task                              |
-| GET     | /bookinstances                     | Public  | Update a task                            |
+| GET     | /bookinstance/:id/create           | Public  | Get HTML form to add a book instance     |
+| POST    | /bookinstance/:id/create           | Public  | Add a book instance                      |
+| GET     | /bookinstance/:id/delete           | Public  | Get HTML form to delete a book instance  |
+| POST    | /bookinstance/:id/delete           | Public  | Delete a book instance                   |
+| GET     | /bookinstance/:id/update           | Public  | Get HTML form to update a book instance  |
+| POST    | /bookinstance/:id/update           | Public  | Update a book instance                   |
+| GET     | /bookinstance/:id                  | Public  | View details of a book instance          |
+| GET     | /bookinstances                     | Public  | View all book instances                  |
 
 
 
