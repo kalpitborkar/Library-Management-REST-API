@@ -65,5 +65,6 @@ REST API for library management system built with Express and MongoDB.
 | GET     | /bookinstance/:id                  | Public  | View details of a book instance          |
 | GET     | /bookinstances                     | Public  | View all book instances                  |
 
-
+## License
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
